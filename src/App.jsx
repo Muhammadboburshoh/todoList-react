@@ -9,18 +9,18 @@ import { useState } from "react"
 function App () {
 
   const [todos, setTodos] = useState([])
-  const [todoId, setTodoId] = useState(0)
+  const [todoId, setTodoId] = useState(0) //todoni idsi uchun
 
   const addInput = (evt) => {
     if (evt.keyCode === 13 && evt.target.value.trim()) {
 
       const newTodo = {
-        id: todoId + 1,
+        id: todoId + 1, //yangi id yeratayotganda todoIdga 1 qo'shib render qilinmoqda 
         title: evt.target.value.trim(),
         completed: false,
       }
 
-      setTodoId(todoId + 1)
+      setTodoId(todoId + 1) //todoId ni 1taga ko'paytirayabdi sababi kiyingi tuduni idsiga 2 bo'lib kelishi uchun, yani
 
       if(document.getElementById('important-work').checked) {
         setTodos([newTodo, ...todos])
