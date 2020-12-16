@@ -60,7 +60,6 @@ function App () {
                     (evt) => {
                       if(evt.target.closest('LI')) {
                         todo.completed = !todo.completed
-                        console.log(todo.completed);
                       }
                     }
                   }/>
