@@ -64,7 +64,7 @@ function App () {
                       }
                     }
                   }/>
-                  <span htmlFor="complated-checkbox" className="todo-text">{todo.title}</span>
+                  <span htmlFor="complated-checkbox" className="todo-text">{todo.id}){todo.title}</span>
                 </div>
                 <button type="submit" 
                 onClick={
